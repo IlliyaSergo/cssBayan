@@ -1,0 +1,62 @@
+body {
+	background: #f5f5dc;
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+  padding: 10px 35px;  
+  overflow:hidden;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary:hover {
+	color:#ff3200;
+}
+
+details summary::before {
+	content: "+ ";
+}
+
+details[open] summary::before{
+  content: "- ";
+  color:#ff3200;
+}
+
+#HeadText:hover + #Unboard, #Unboard:hover {
+  display: block;
+}
+
+#Unboard {
+  display: none;
+}
+
+.img-adaptive {
+display: block;
+margin: 0 auto; 
+max-width: 100%;
+height: auto;
+}
+
+.font_style {
+	font-family: Arial;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em
+}
+.content {
+	position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em
+}
+
+.content:hover .block{
+	display: block;
+}
